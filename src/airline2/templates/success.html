@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  SUCCESS
+{% endblock %}
+
+{% block body %}
+  <h1 style="text-align:center;">SUCCESS: Flight Booked!</h1>
+
+  <div style="text-align:center">
+    <form action="{{ url_for('index') }}">
+      <input class="btn btn-primary" type="submit" value="Go Back" />
+    </form>
+  </div>
+{% endblock %}
