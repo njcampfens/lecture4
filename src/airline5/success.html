@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  SUCCESS
+{% endblock %}
+
+{% block body %}
+
+  <h1 style="color:green; text-align:center;">Success: {{ message }}</h1>
+
+  <div style='text-align:center;'>
+
+  </div>
+  <formaction="{{ url_for('index') }}">
+    <input type="submit" class="btn btn-primary" value="Go Back">
+  </form>
+{% endblock %}

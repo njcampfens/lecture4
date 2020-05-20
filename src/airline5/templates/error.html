@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  ERROR
+{% endblock %}
+
+{% block body %}
+
+  <h1 style="color:red; text-align:center;">ERROR: {{ message }}</h1>
+
+  <div style='text-align:center;'>
+
+  </div>
+  <formaction="{{ url_for('index') }}">
+    <input type="submit" class="btn btn-primary" value="Go Back">
+  </form>
+{% endblock %}
